@@ -33,10 +33,10 @@ All vehicles are evaluated with standard equipment, in addition some vehicles ma
 
 ## Secondary Safety (30 points)
 ### Rear Seatbelts (4 points)
-3 points are awarded if all rear seats have an three-point seatbelt with automatic retractor.
+4 points are awarded if all rear seats have an three-point seatbelt with automatic retractor.
 ### Rear Seatbelt Reminders (10 points)
 2 points are awarded if all rear seats have an audio or visual seatbelt status indication for seatbelt status.
-8 points divided equally over each rear seat (including a third row if fitted) that:
+8 points are divided equally over each rear seat (including a third row if fitted) that:
 * has occupant detection, and
 * has passive activation, i.e., a belt need not first *change status* from fastened to unfastened for either signal to start
 ### Side Head Protection (6)
