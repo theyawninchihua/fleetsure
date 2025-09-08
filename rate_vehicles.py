@@ -3,6 +3,9 @@ from datetime import date
 import json
 import sys
 from string import Template
+import time
+from twikit import Client
+import asyncio
 
 def add_scores(json_path):
     with open(json_path, 'r') as file:
@@ -261,12 +264,47 @@ def update_page():
         template = Template(file.read())
     
     webpage_content = template.substitute(
-        results="".join([f"<li><a href=\"cdn/{filename}\">{filename.replace('.pdf', '').replace('-', ' ')}</a></li>" for filename in sorted(os.listdir("cdn"), reverse=True)]),
+        results="".join([f"<li><a href=\"cdn/{filename}\">{filename.replace('.pdf', '').replace('-', ' ')}</a></li>\n" for filename in sorted(os.listdir("cdn"), reverse=True)]),
         count=len(os.listdir("cdn"))
     )
 
-    with open("index.html", 'w') as file:
+    with open("index.html", "w") as file:
         file.write(webpage_content)
+
+def create_tweet(data: dict):
+    if not os.path.exists("tweets"):
+        os.mkdir("tweets")
+    
+    name = "-".join([date.today().strftime('%Y-%m-%d'), data["Manufacturer"], data["Model"], data["Equipment"], "equipment", str(data["stars"]), "star"])
+    pdf_path = os.path.join("cdn", "".join(c for c in name if c.isalpha() or c.isdigit() or c=='-' or c=='_' or c==' ')+".pdf")
+    text_path = os.path.join("tweets", "".join(c for c in name if c.isalpha() or c.isdigit() or c=='-' or c=='_' or c==' ')+".txt")
+    image_path = os.path.join("tweets", "".join(c for c in name if c.isalpha() or c.isdigit() or c=='-' or c=='_' or c==' ')+".png")
+
+    with open(text_path, "w") as file:
+        file.write("New #FleetSure results\n")
+        file.write("\n")
+        file.write(f"{data['Manufacturer']} {data['Model']}\n")
+        file.write(f"with {data['Equipment']} equipment")
+        file.write("\n")
+        for i in range(data["stars"]):
+            file.write(f"⭐️")
+        file.write("\n")
+        file.write(f"{data['stars']} stars\n")
+        file.write("\n")
+        file.write("More: https://theyawninchihua.github.io/fleetsure/")
+    
+    os.system(f"sips -s format png \"{pdf_path}\" --out \"{image_path}\"")
+
+    return text_path, image_path
+
+async def publish_tweet(text_path, image_path):
+    client = Client('en-US')
+    client.load_cookies("gobarncrap.json")
+
+    with open(text_path, "r", encoding="utf-8") as file:
+        tweet_text = file.read()
+        media_ids = [await client.upload_media(image_path)]
+        await client.create_tweet(text=tweet_text, media_ids=media_ids)
 
 if __name__ == "__main__":
     # usage: python rate_vehicles.py data/car1.json data/car2.json ...
@@ -275,5 +313,9 @@ if __name__ == "__main__":
         data = add_scores(json_file)
         tex_path = generate_report(data)
         compile_latex(tex_path) # COMMENT OUT IF pdflatex NOT INSTALLED
-    
-    update_page()
+        update_page()
+        
+        # txt, png = create_tweet(data) # COMMENT OUT IF sips NOT INSTALLED (SHIPS WITH MACOS) OR twikit NOT INSTALLED
+        
+        # input("Tweet?")
+        # asyncio.run(publish_tweet(txt, png))
