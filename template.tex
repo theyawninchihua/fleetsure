@@ -1,0 +1,218 @@
+\documentclass[twocolumn, letterpaper]{scrartcl}
+% \documentclass{article}
+
+\usepackage{fleetsure}
+
+\begin{document}
+    \noindent \includegraphics[height=0.5in]{images/logo_3d.png}\\[0.7em]
+    
+    \noindent \Huge $make \textbf{$model} \\ [-0.5em]
+    \noindent \LARGE $equipment safety equipment \\ [0.25cm]
+    \Huge \starrating{$stars}
+    \vspace{0.25cm}
+    \hrule
+    \vspace{0.25cm}
+    \Large
+
+    \begin{figure}[h]
+        \centering
+        \includegraphics[height=10.5em]{$image_path}
+    \end{figure}
+
+    \vspace{0.25cm}
+    \vfill
+    \sffamily
+
+    \noindent \textbf{PRIMARY SAFETY} \hfill \fcolorbox{black}{lightgray}{\textbf{$PS\%}}
+    \vspace{0.5cm}
+
+    \noindent Electronic Stability Control \hfill \textbf{$PS_ESC} max. 8
+    \vspace{0.1cm} \hrule
+    \begin{table}[!h]
+        \sffamily
+        \centering
+        \vspace{-0.3cm}
+        \begin{tabular}{rl}
+            system name & $ESC_system_name\\
+        \end{tabular}
+        \label{tab:esc}
+    \end{table}
+
+    \noindent Driver Monitoring System \hfill \textbf{$PS_DMS} max. 2
+    \vspace{0.1cm} \hrule
+    \begin{table}[!h]
+        \sffamily
+        \centering
+        \vspace{-0.3cm}
+        \begin{tabular}{rl}
+            system name & $DMS_system_name\\
+        \end{tabular}
+        \label{tab:dms}
+    \end{table}
+
+    \noindent Tyre Pressure Monitoring \hfill \textbf{$PS_TPMS} max. 2
+    \vspace{0.1cm} \hrule
+    \begin{table}[!h]
+        \sffamily
+        \centering
+        \vspace{-0.3cm}
+        \begin{tabular}{rl}
+            system name & $TPMS_system_name\\
+            warning & $TPMS_warning \\
+            readout & $TPMS_readout \\
+        \end{tabular}
+        \label{tab:tpms}
+    \end{table}
+
+    \noindent Blind Spot Monitoring \hfill \textbf{$PS_BSM} max. 2
+    \vspace{0.1cm} \hrule
+    \begin{table}[!h]
+        \sffamily
+        \centering
+        \vspace{-0.3cm}
+        \begin{tabular}{rl}
+            system name & $BSM_system_name\\
+            sensor & $BSM_sensor \\
+            driver side & $BSM_driver \\
+            passenger side & $BSM_passenger \\
+        \end{tabular}
+        \label{tab:bsm}
+    \end{table}
+    
+    \noindent Physical Controls \hfill \textbf{$PS_physical_controls} max. 6
+    \vspace{0.1cm} \hrule
+    \begin{table}[!h]
+        \sffamily
+        \centering
+        \vspace{-0.3cm}
+        \begin{tabular}{rl}
+            hazard lights & $hazard \\
+            gear & $gear \\
+            climate & $climate \\
+            music and navigation & $music \\
+            turn indicators & $indicators \\
+            windscreen wipers & $wipers \\
+        \end{tabular}
+        \label{tab:physical}
+    \end{table}
+
+    \newpage
+
+    \noindent \textbf{SECONDARY SAFETY} \hfill \fcolorbox{black}{lightgray}{\textbf{$SS\%}}
+    \vspace{0.5cm}
+
+    \noindent Rear Seatbelts \hfill \textbf{$SS_seatbelts} max. 4
+    \vspace{0.1cm} \hrule
+    \begin{table}[!h]
+        \sffamily
+        \centering
+        \vspace{-0.3cm}
+        \begin{tabular}{rccc}
+            \textbf{position} & \textbf{outboard} & \textbf{centre} & \textbf{third row}\\
+            three-point & $threeptoutboard & $threeptcentre & $threeptthirdrow\\
+        \end{tabular}
+        \label{tab:seatbelts}
+    \end{table}
+
+    \noindent Rear Seatbelt Reminders \hfill \textbf{$SS_sbr} max. 10
+    \vspace{0.1cm} \hrule
+    \begin{table}[!h]
+        \sffamily
+        \centering
+        \vspace{-0.3cm}
+        \begin{tabular}{rccc}
+            \textbf{position} & \textbf{outboard} & \textbf{centre} & \textbf{third row}\\
+            visual signal & $visual_outboard & $visual_centre & $visual_thirdrow\\
+            acoustic signal & $acoustic_outboard & $acoustic_centre & $acoustic_thirdrow\\
+            occupant detection & $detection_outboard & $detection_centre & $detection_thirdrow\\
+            passive activation & $immediate_outboard & $immediate_centre & $immediate_thirdrow\\
+        \end{tabular}
+        \label{tab:sbr}
+    \end{table}
+
+    \noindent Head Protection Devices \hfill \textbf{$SS_curtainairbags} max. 6
+    \vspace{0.1cm} \hrule
+    \begin{table}[!h]
+        \sffamily
+        \centering
+        \vspace{-0.3cm}
+        \begin{tabular}{rccc}
+            \textbf{position} & \textbf{front} & \textbf{rear} & \textbf{third row}\\
+            struck-side head airbag & $frontcurtainairbag & $rearcurtainairbag & $thirdrowcurtainairbag\\
+            far-side airbag & $frontfarsideairbag & \statuscircle{0} & \statuscircle{0}\\
+        \end{tabular}
+        \label{tab:curtainairbags}
+    \end{table}
+
+    \noindent Chest Protection Devices \hfill \textbf{$SS_thoraxairbags} max. 3
+    \vspace{0.1cm} \hrule
+    \begin{table}[!h]
+        \sffamily
+        \centering
+        \vspace{-0.3cm}
+        \begin{tabular}{rcc}
+            \textbf{position} & \textbf{front} & \textbf{rear}\\
+            thorax airbag & $frontthoraxairbag & $rearthoraxairbag\\
+        \end{tabular}
+        \label{tab:thoraxairbags}
+    \end{table}
+
+    \noindent Neck Restraints \hfill \textbf{$SS_headrestraints} max. 4
+    \vspace{0.1cm} \hrule
+    \begin{table}[!h]
+        \sffamily
+        \centering
+        \vspace{-0.3cm}
+        \begin{tabular}{rccc}
+            \textbf{position} & \textbf{rear outboard} & \textbf{centre} & \textbf{third row}\\
+            sufficient\footnotemark & $headrest_outboard & $headrest_centre & $headrest_thirdrow\\
+        \end{tabular}
+        \label{tab:headrestraints}
+    \end{table}
+    \footnotetext{subjective judgment}
+
+    \noindent Child Readiness \hfill \textbf{$SS_child} max. 3
+    \vspace{0.1cm} \hrule
+    \begin{table}[!h]
+        \sffamily
+        \centering
+        \vspace{-0.3cm}
+        \begin{tabular}{rcccc}
+            \textbf{position} & \textbf{rear} & \textbf{rear} & \textbf{front} & \textbf{third}\\
+            & \textbf{outboard} & \textbf{centre} & \textbf{passenger} & \textbf{row}\\
+            ISOFIX & $isofix_outboard & $isofix_centre & $isofix_front & $isofix_thirdrow\\
+            i-Size & $isize_outboard & $isize_centre & $isize_front & $isize_thirdrow\\
+            Top Tether & $tether_outboard & $tether_centre & $tether_front & $tether_thirdrow\\
+        \end{tabular}
+        \label{tab:child}
+    \end{table}
+
+    \vspace{0.5cm}
+
+    \vfill
+
+    \noindent \textbf{COMMENTS}\\
+    \noindent $comments \\
+
+    \begin{table}[!h]
+        \sffamily
+        \centering
+        \vspace{-0.3cm}
+        \begin{tabular}{|cc|c|}
+            \hline
+            \textbf{primary} & \textbf{secondary} & \textbf{overall}\\ 
+            \textbf{safety} & \textbf{safety} & \textbf{result}\\
+            \hline
+            $PS\% & $SS\% & \\
+            \starrating{$PS_stars} & \starrating{$SS_stars} & \starrating{$stars}\\
+            \hline
+            \multicolumn{3}{|l|}{\textbf{Evaluated variant:} $variant} \\
+            \multicolumn{3}{|l|}{\textbf{Evaluated on:} \today} \\
+            \hline
+            \multicolumn{3}{|c|}{\textbf{Protocol:} \href{https://theyawninchihua.github.io/fleetsure/README.md}{FleetSure v1.0}}\\
+            \hline
+        \end{tabular}
+        \label{tab:placeholder}
+    \end{table}
+    
+\end{document}

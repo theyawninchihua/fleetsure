@@ -1,0 +1,84 @@
+\ProvidesPackage{fleetsure}
+
+% NOTES
+
+% You cab convert the factsheet to Microsoft word format using pandoc:
+%
+% pandoc --filter pandoc-citeproc --bibliography=biblio.bib -s uog_factsheet.tex -o paper.docx
+%
+% You may have to install pandoc-citeproc. On Ubuntu use:
+% sudo apt-get install pandoc-citeproc
+
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[tmargin=0.5in,bmargin=0.5in, lmargin=0.5in, rmargin=0.5in]{geometry}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric}
+\usepackage{ifthen}
+
+% Following line defines the Triton Green color (RGB = 4,106,56)
+\definecolor{triton_green}{RGB}{4,106,56}
+
+% Set colors for hyperlinks
+\hypersetup{
+  linkcolor  = triton_green,
+  citecolor  = triton_green,
+  urlcolor   = triton_green,
+  colorlinks = true,
+}
+
+% \usepackage{breakurl}
+% Default: numerical citations
+\usepackage[numbers]{natbib}
+
+% Uncomment this lines for superscript citations instead
+% \usepackage[super]{natbib}
+
+% Uncomment these lines for author-year citations instead
+%\usepackage[round]{natbib}
+%\let\cite\citep
+
+\pagestyle{empty} % Removes headers and footers, freeing up some real estate
+
+\definecolor{gold}{RGB}{255,204,0}
+\definecolor{green}{RGB}{0,191,0}
+% \definecolor{green}{RGB}{191,228,118}
+\definecolor{red}{RGB}{255,0,0}
+% \definecolor{red}{RGB}{255,150,138}
+
+\newcommand{\starfull}{%
+  \tikz[baseline=-1ex]{%
+    \node[star,star points=5,star point ratio=2.6,
+         minimum size=1.2em,inner sep=0pt,draw=black,fill=gold]{};%
+  }%
+}
+
+\newcommand{\starhollow}{%
+  \tikz[baseline=-1ex]{%
+    \node[star,star points=5,star point ratio=2.6,
+         minimum size=1.2em,inner sep=0pt,draw=black,fill=white]{};%
+  }%
+}
+
+\newcommand{\starrating}[1]{%
+  \foreach \i in {1,...,5}{%
+  \ifnum\i>#1
+    \starhollow
+  \else
+    \starfull
+  \fi
+    }%
+}
+
+\newcommand{\statuscircle}[1]{%
+  \tikz[baseline=-0.5ex] \node[
+    circle,
+    draw=black,
+    fill={\ifnum#1=2 green\else \ifnum#1=1 red\else white\fi\fi},
+    inner sep=2pt
+  ] {};%
+}
