@@ -314,8 +314,8 @@ if __name__ == "__main__":
         tex_path = generate_report(data)
         compile_latex(tex_path) # COMMENT OUT IF pdflatex NOT INSTALLED
         update_page()
+
+        txt, png = create_tweet(data) # COMMENT OUT IF sips NOT INSTALLED (SHIPS WITH MACOS) OR twikit NOT INSTALLED
         
-        # txt, png = create_tweet(data) # COMMENT OUT IF sips NOT INSTALLED (SHIPS WITH MACOS) OR twikit NOT INSTALLED
-        
-        # input("Tweet?")
-        # asyncio.run(publish_tweet(txt, png))
+        input("Tweet?")
+        asyncio.run(publish_tweet(txt, png))
