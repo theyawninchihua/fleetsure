@@ -271,6 +271,44 @@ def update_page():
     with open("index.html", "w") as file:
         file.write(webpage_content)
 
+def add_to_summary(data):
+    with open("summary.json", 'r') as file:
+        existing_data = json.load(file)
+    
+    with open("summary.json", 'w') as file:
+        existing_data.append({"Manufacturer": data["Manufacturer"], "Model": data["Model"], "Equipment": data["Equipment"], "PS": data["PS"], "SS": data["SS"], "stars": data["stars"]})
+        existing_data = sorted(existing_data, key=lambda x: (x["stars"], 0.2*x["PS"]+0.3*x["SS"], x["SS"], x["PS"]), reverse=True)
+        json.dump(existing_data, file, indent=4)
+    
+    with open("tex_source/summary.tex", 'w') as file:
+        template_str = r"""
+\documentclass[letterpaper, landscape]{scrartcl}
+\usepackage{fleetsure}
+\usepackage{longtable}
+\begin{document}
+\sffamily
+\noindent \Huge \textbf{\href{https://theyawninchihua.github.io/fleetsure/}{FleetSure}} \hfill \includegraphics[height=1.5em]{images/logo_3d.png}\\
+\noindent \LARGE Protocol v1.0 • results until \today\\
+
+\centering
+\LARGE
+\rmfamily
+\begin{longtable}{| p{.40\textwidth} | p{.15\textwidth} | p{.12\textwidth} | p{.12\textwidth} | p{.15\textwidth} |}
+\sffamily \textbf{model}& \sffamily \textbf{equipment} & \sffamily \textbf{primary} & \sffamily \textbf{secondary} & \sffamily \textbf{result}\\
+\hline
+\hline
+$results
+\end{longtable}
+\end{document} 
+"""
+        template = Template(template_str)
+        summary_content = template.substitute(
+            results="".join(f'{result["Manufacturer"]} \\bfseries {result["Model"]}\\mdseries & {result["Equipment"]} & \\sffamily {result["PS"]}\\% & \\sffamily {result["SS"]}\\% & \\starrating{result["stars"]}\\\\\\hline\n' for result in existing_data)
+        )
+        file.write(summary_content)
+
+
+
 def create_tweet(data: dict):
     if not os.path.exists("tweets"):
         os.mkdir("tweets")
@@ -314,8 +352,10 @@ if __name__ == "__main__":
         tex_path = generate_report(data)
         compile_latex(tex_path) # COMMENT OUT IF pdflatex NOT INSTALLED
         update_page()
+        add_to_summary(data)
+        compile_latex("tex_source/summary.tex")
 
-        txt, png = create_tweet(data) # COMMENT OUT IF sips NOT INSTALLED (SHIPS WITH MACOS) OR twikit NOT INSTALLED
+        # txt, png = create_tweet(data) # COMMENT OUT IF sips NOT INSTALLED (SHIPS WITH MACOS) OR twikit NOT INSTALLED
         
-        input("Tweet?")
-        asyncio.run(publish_tweet(txt, png))
+        # input(f"Tweet {data['Model']} {data['Equipment']}?")
+        # asyncio.run(publish_tweet(txt, png))
