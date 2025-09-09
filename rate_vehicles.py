@@ -357,7 +357,7 @@ if __name__ == "__main__":
         add_to_summary(data)
         compile_latex("tex_source/summary.tex")
 
-        # txt, png = create_tweet(data) # COMMENT OUT IF sips NOT INSTALLED (SHIPS WITH MACOS) OR twikit NOT INSTALLED
+        txt, png = create_tweet(data) # COMMENT OUT IF sips NOT INSTALLED (SHIPS WITH MACOS) OR twikit NOT INSTALLED
         
-        # input(f"Tweet {data['Model']} {data['Equipment']}?")
-        # asyncio.run(publish_tweet(txt, png))
+        input(f"Tweet {data['Model']} {data['Equipment']}?")
+        asyncio.run(publish_tweet(txt, png))
