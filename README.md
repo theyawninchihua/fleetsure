@@ -20,7 +20,7 @@ All vehicles are evaluated with standard equipment, in addition some vehicles ma
     - relays a camera feed of the rear blind spot to the driver when the turn signal for that side is engaged
     - activates a visual or audio warning when there is a vehicle in the rear blind spot
 #### Driver Monitoring System (max. 2 points)
-- 2 points are awarded if the vehicle has a camera-based fatigue detection system designed to detect drowsiness.
+- 2 points are awarded if the vehicle has a steering input or camera-based fatigue detection system designed to detect fatigue. Microsleep and distraction are not required.
 #### Tyre Pressure Monitoring (max. 2 points)
 - 2 points are awarded for a direct or indirect tyre pressure monitoring system that has a deflation warning.
 #### Tactile Controls (max. 6)
