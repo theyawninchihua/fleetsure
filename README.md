@@ -51,5 +51,8 @@ All vehicles are evaluated with standard equipment, in addition some vehicles ma
 - 1 point is awarded if both second row outboard seats have a side thorax airbag.
 #### Head Restraints (max. 4 points)
 - 4 points are awarded if all rear seats have a sufficiently sized head restraint (the assessment of “sufficiently sized” will be made subjectively; adjustable are default pass).
-#### ISOFIX (max. 3 points)
-- 1 point is awarded for every ISOFIX or i-Size position. If a frontal airbag is fitted to a seat, deactivation must be possible without a dealer visit (maximum points are capped at 3).
+#### Child Readiness (max. 3 points)
+- 0.5 point is awarded for every ISOFIX position. If a frontal airbag is fitted to a seat, deactivation must be possible without a dealer visit.
+- 0.25 point is awarded for every i-Size position. If a frontal airbag is fitted to a seat, deactivation must be possible without a dealer visit.
+- 0.25 point is awarded for every position with a Top Tether. If a frontal airbag is fitted to a seat, deactivation must be possible without a dealer visit.
+Maximum points are capped at 3.

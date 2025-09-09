@@ -117,7 +117,9 @@ def add_scores(json_path):
 
     data["SS_side_thorax_airbags"] = (2.0 if data["Front thorax airbag"] == "YES" else 0.0) + (1.0 if data["Rear thorax airbag"] == "YES" else 0.0)
 
-    data["SS_child_readiness"] = (2.0 if data["Outboard ISOFIX"] == "YES" else 0.0) + (1.0 if data["Centre ISOFIX"] == "YES" else 0.0) + (2.0 if data["Third row ISOFIX"] == "YES" else 0.0)
+    data["SS_child_readiness"] = (1.0 if data["Outboard ISOFIX"] == "YES" else 0.0) + (0.5 if data["Centre ISOFIX"] == "YES" else 0.0) + (0.5 if data["Front passenger ISOFIX"] == "YES" else 0.0) + (1.0 if data["Third row ISOFIX"] == "YES" else 0.0)
+    data["SS_child_readiness"] += (0.5 if data["Outboard i-Size"] == "YES" else 0.0) + (0.25 if data["Centre i-Size"] == "YES" else 0.0) + (0.25 if data["Front passenger i-Size"] == "YES" else 0.0) + (0.5 if data["Third row i-Size"] == "YES" else 0.0)
+    data["SS_child_readiness"] += (0.5 if data["Outboard Top Tether"] == "YES" else 0.0) + (0.25 if data["Centre Top Tether"] == "YES" else 0.0) + (0.25 if data["Front passenger Top Tether"] == "YES" else 0.0) + (0.5 if data["Third row Top Tether"] == "YES" else 0.0)
     data["SS_child_readiness"] = min(data["SS_child_readiness"], 3.0)
 
     data["SS"] = data["SS_rear_seatbelts"] + data["SS_rear_seatbelt_reminders"] + data["SS_head_restraints"] + data["SS_side_head_airbags"] + data["SS_side_thorax_airbags"] + data["SS_child_readiness"]
