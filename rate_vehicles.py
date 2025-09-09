@@ -279,7 +279,7 @@ def add_to_summary(data):
     
     with open("summary.json", 'w') as file:
         existing_data.append({"Manufacturer": data["Manufacturer"], "Model": data["Model"], "Equipment": data["Equipment"], "PS": data["PS"], "SS": data["SS"], "stars": data["stars"]})
-        existing_data = sorted(existing_data, key=lambda x: (x["stars"], 0.2*x["PS"]+0.3*x["SS"], x["SS"], x["PS"]), reverse=True)
+        existing_data = sorted(existing_data, key=lambda x: (ord(x["Equipment"][0]), x["stars"], 0.2*x["PS"]+0.3*x["SS"], x["SS"], x["PS"]), reverse=True)
         json.dump(existing_data, file, indent=4)
     
     with open("tex_source/summary.tex", 'w') as file:
@@ -331,7 +331,7 @@ def create_tweet(data: dict):
         file.write("\n")
         file.write(f"{data['stars']} stars\n")
         file.write("\n")
-        file.write("More: https://theyawninchihua.github.io/fleetsure/")
+        file.write("All results: https://theyawninchihua.github.io/fleetsure/")
     
     os.system(f"sips -s format png \"{pdf_path}\" --out \"{image_path}\"")
 
@@ -354,10 +354,12 @@ if __name__ == "__main__":
         tex_path = generate_report(data)
         compile_latex(tex_path) # COMMENT OUT IF pdflatex NOT INSTALLED
         update_page()
+
         add_to_summary(data)
         compile_latex("tex_source/summary.tex")
 
         txt, png = create_tweet(data) # COMMENT OUT IF sips NOT INSTALLED (SHIPS WITH MACOS) OR twikit NOT INSTALLED
         
-        input(f"Tweet {data['Model']} {data['Equipment']}?")
-        asyncio.run(publish_tweet(txt, png))
+        if data["Equipment"] == "standard":
+            input(f"Tweet {data['Manufacturer']} {data['Model']} {data['Equipment']}?")
+            asyncio.run(publish_tweet(txt, png))
