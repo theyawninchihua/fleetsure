@@ -1,0 +1,50 @@
+[
+    {
+        "Manufacturer": "Honda",
+        "Model": "AMAZE 3rd-gen",
+        "Equipment": "standard",
+        "PS": 70,
+        "SS": 63,
+        "stars": 3
+    },
+    {
+        "Manufacturer": "Suzuki",
+        "Model": "DZIRE",
+        "Equipment": "standard",
+        "PS": 70,
+        "SS": 50,
+        "stars": 3
+    },
+    {
+        "Manufacturer": "Hyundai",
+        "Model": "AURA",
+        "Equipment": "standard",
+        "PS": 30,
+        "SS": 43,
+        "stars": 2
+    },
+    {
+        "Manufacturer": "Honda",
+        "Model": "AMAZE 2nd-gen",
+        "Equipment": "standard",
+        "PS": 30,
+        "SS": 11,
+        "stars": 1
+    },
+    {
+        "Manufacturer": "Honda",
+        "Model": "AMAZE 3rd-gen",
+        "Equipment": "optional",
+        "PS": 75,
+        "SS": 63,
+        "stars": 3
+    },
+    {
+        "Manufacturer": "Hyundai",
+        "Model": "AURA",
+        "Equipment": "optional",
+        "PS": 70,
+        "SS": 48,
+        "stars": 2
+    }
+]
