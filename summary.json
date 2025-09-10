@@ -24,6 +24,14 @@
         "stars": 2
     },
     {
+        "Manufacturer": "Tata",
+        "Model": "TIGOR",
+        "Equipment": "standard",
+        "PS": 30,
+        "SS": 25,
+        "stars": 1
+    },
+    {
         "Manufacturer": "Honda",
         "Model": "AMAZE 2nd-gen",
         "Equipment": "standard",
@@ -46,5 +54,13 @@
         "PS": 70,
         "SS": 48,
         "stars": 2
+    },
+    {
+        "Manufacturer": "Tata",
+        "Model": "TIGOR",
+        "Equipment": "optional",
+        "PS": 80,
+        "SS": 25,
+        "stars": 1
     }
 ]
