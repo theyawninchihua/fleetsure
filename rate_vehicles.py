@@ -266,8 +266,8 @@ def update_page():
         template = Template(file.read())
     
     webpage_content = template.substitute(
-        results="".join([f"<li><a href=\"cdn/{filename}\">{filename.replace('.pdf', '').replace('-', ' ')}</a></li>\n" for filename in sorted(os.listdir("cdn"), reverse=True)]),
-        count=len(os.listdir("cdn"))
+        results="".join([f"<li><a href=\"cdn/{filename}\">{filename.replace('.pdf', '').replace('-', ' ').replace('summary', 'Click here for a summary of all results so far!')}</a></li>\n" for filename in sorted(os.listdir("cdn"), reverse=True)]),
+        count=len(os.listdir("cdn"))-1
     )
 
     with open("index.html", "w") as file:
@@ -295,7 +295,7 @@ def add_to_summary(data):
 \centering
 \LARGE
 \rmfamily
-\begin{longtable}{| p{.40\textwidth} | p{.15\textwidth} | p{.12\textwidth} | p{.12\textwidth} | p{.15\textwidth} |}
+\begin{longtable}{ p{.40\textwidth}  p{.12\textwidth}  p{.12\textwidth}  p{.12\textwidth}  p{.13\textwidth} }
 \sffamily \textbf{model}& \sffamily \textbf{equipment} & \sffamily \textbf{primary} & \sffamily \textbf{secondary} & \sffamily \textbf{result}\\
 \hline
 \hline

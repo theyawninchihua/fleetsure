@@ -9,11 +9,35 @@
     },
     {
         "Manufacturer": "Suzuki",
+        "Model": "ERTIGA",
+        "Equipment": "standard",
+        "PS": 70,
+        "SS": 61,
+        "stars": 3
+    },
+    {
+        "Manufacturer": "Suzuki",
         "Model": "DZIRE",
         "Equipment": "standard",
         "PS": 70,
         "SS": 50,
         "stars": 3
+    },
+    {
+        "Manufacturer": "Kia",
+        "Model": "CARENS",
+        "Equipment": "standard",
+        "PS": 80,
+        "SS": 43,
+        "stars": 2
+    },
+    {
+        "Manufacturer": "Kia",
+        "Model": "CARENS CLAVIS",
+        "Equipment": "standard",
+        "PS": 80,
+        "SS": 43,
+        "stars": 2
     },
     {
         "Manufacturer": "Hyundai",
@@ -22,6 +46,14 @@
         "PS": 30,
         "SS": 43,
         "stars": 2
+    },
+    {
+        "Manufacturer": "Toyota",
+        "Model": "RUMION",
+        "Equipment": "standard",
+        "PS": 70,
+        "SS": 11,
+        "stars": 1
     },
     {
         "Manufacturer": "Tata",
@@ -38,6 +70,14 @@
         "PS": 30,
         "SS": 11,
         "stars": 1
+    },
+    {
+        "Manufacturer": "Kia",
+        "Model": "CARENS CLAVIS",
+        "Equipment": "optional",
+        "PS": 95,
+        "SS": 56,
+        "stars": 3
     },
     {
         "Manufacturer": "Honda",
@@ -61,6 +101,14 @@
         "Equipment": "optional",
         "PS": 80,
         "SS": 25,
+        "stars": 1
+    },
+    {
+        "Manufacturer": "Toyota",
+        "Model": "RUMION",
+        "Equipment": "optional",
+        "PS": 70,
+        "SS": 18,
         "stars": 1
     }
 ]
