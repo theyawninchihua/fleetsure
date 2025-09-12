@@ -1,6 +1,14 @@
 [
     {
         "Manufacturer": "Honda",
+        "Model": "CITY",
+        "Equipment": "standard",
+        "PS": 80,
+        "SS": 61,
+        "stars": 3
+    },
+    {
+        "Manufacturer": "Honda",
         "Model": "AMAZE 3rd-gen",
         "Equipment": "standard",
         "PS": 70,
@@ -13,6 +21,14 @@
         "Equipment": "standard",
         "PS": 70,
         "SS": 61,
+        "stars": 3
+    },
+    {
+        "Manufacturer": "Hyundai",
+        "Model": "VERNA",
+        "Equipment": "standard",
+        "PS": 80,
+        "SS": 50,
         "stars": 3
     },
     {
@@ -56,6 +72,14 @@
         "stars": 1
     },
     {
+        "Manufacturer": "Suzuki",
+        "Model": "CIAZ",
+        "Equipment": "standard",
+        "PS": 70,
+        "SS": 11,
+        "stars": 1
+    },
+    {
         "Manufacturer": "Tata",
         "Model": "TIGOR",
         "Equipment": "standard",
@@ -77,6 +101,22 @@
         "Equipment": "optional",
         "PS": 95,
         "SS": 56,
+        "stars": 3
+    },
+    {
+        "Manufacturer": "Honda",
+        "Model": "CITY",
+        "Equipment": "optional",
+        "PS": 85,
+        "SS": 61,
+        "stars": 3
+    },
+    {
+        "Manufacturer": "Hyundai",
+        "Model": "VERNA",
+        "Equipment": "optional",
+        "PS": 95,
+        "SS": 50,
         "stars": 3
     },
     {
