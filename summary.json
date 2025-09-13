@@ -1,5 +1,21 @@
 [
     {
+        "Manufacturer": "MG",
+        "Model": "WINDSOR",
+        "Equipment": "standard",
+        "PS": 80,
+        "SS": 75,
+        "stars": 4
+    },
+    {
+        "Manufacturer": "Tata",
+        "Model": "NEXON.EV",
+        "Equipment": "standard",
+        "PS": 70,
+        "SS": 76,
+        "stars": 4
+    },
+    {
         "Manufacturer": "Honda",
         "Model": "CITY",
         "Equipment": "standard",
@@ -88,12 +104,44 @@
         "stars": 1
     },
     {
+        "Manufacturer": "Tata",
+        "Model": "XPRES-T",
+        "Equipment": "standard",
+        "PS": 30,
+        "SS": 25,
+        "stars": 1
+    },
+    {
         "Manufacturer": "Honda",
         "Model": "AMAZE 2nd-gen",
         "Equipment": "standard",
         "PS": 30,
         "SS": 11,
         "stars": 1
+    },
+    {
+        "Manufacturer": "Citro\u00ebn",
+        "Model": "\u00eb-C3",
+        "Equipment": "standard",
+        "PS": 30,
+        "SS": 0,
+        "stars": 0
+    },
+    {
+        "Manufacturer": "MG",
+        "Model": "WINDSOR",
+        "Equipment": "optional",
+        "PS": 80,
+        "SS": 88,
+        "stars": 4
+    },
+    {
+        "Manufacturer": "Tata",
+        "Model": "NEXON.EV",
+        "Equipment": "optional",
+        "PS": 90,
+        "SS": 76,
+        "stars": 4
     },
     {
         "Manufacturer": "Kia",
