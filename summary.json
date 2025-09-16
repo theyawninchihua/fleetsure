@@ -56,6 +56,14 @@
         "stars": 3
     },
     {
+        "Manufacturer": "Suzuki",
+        "Model": "SWIFT",
+        "Equipment": "standard",
+        "PS": 70,
+        "SS": 50,
+        "stars": 3
+    },
+    {
         "Manufacturer": "Kia",
         "Model": "CARENS",
         "Equipment": "standard",
@@ -73,11 +81,43 @@
     },
     {
         "Manufacturer": "Hyundai",
+        "Model": "EXTER",
+        "Equipment": "standard",
+        "PS": 30,
+        "SS": 48,
+        "stars": 2
+    },
+    {
+        "Manufacturer": "Hyundai",
         "Model": "AURA",
         "Equipment": "standard",
         "PS": 30,
         "SS": 43,
         "stars": 2
+    },
+    {
+        "Manufacturer": "Hyundai",
+        "Model": "GRAND i10 NIOS",
+        "Equipment": "standard",
+        "PS": 30,
+        "SS": 43,
+        "stars": 2
+    },
+    {
+        "Manufacturer": "Tata",
+        "Model": "PUNCH",
+        "Equipment": "standard",
+        "PS": 70,
+        "SS": 26,
+        "stars": 1
+    },
+    {
+        "Manufacturer": "Suzuki",
+        "Model": "IGNIS",
+        "Equipment": "standard",
+        "PS": 70,
+        "SS": 13,
+        "stars": 1
     },
     {
         "Manufacturer": "Toyota",
@@ -122,6 +162,14 @@
     {
         "Manufacturer": "Citro\u00ebn",
         "Model": "\u00eb-C3",
+        "Equipment": "standard",
+        "PS": 30,
+        "SS": 0,
+        "stars": 0
+    },
+    {
+        "Manufacturer": "Citro\u00ebn",
+        "Model": "C3",
         "Equipment": "standard",
         "PS": 30,
         "SS": 0,
@@ -176,10 +224,42 @@
         "stars": 3
     },
     {
+        "Manufacturer": "Suzuki",
+        "Model": "DZIRE",
+        "Equipment": "optional",
+        "PS": 80,
+        "SS": 50,
+        "stars": 3
+    },
+    {
+        "Manufacturer": "Citro\u00ebn",
+        "Model": "C3",
+        "Equipment": "optional",
+        "PS": 80,
+        "SS": 50,
+        "stars": 3
+    },
+    {
         "Manufacturer": "Hyundai",
         "Model": "AURA",
         "Equipment": "optional",
-        "PS": 70,
+        "PS": 80,
+        "SS": 48,
+        "stars": 2
+    },
+    {
+        "Manufacturer": "Hyundai",
+        "Model": "GRAND i10 NIOS",
+        "Equipment": "optional",
+        "PS": 80,
+        "SS": 48,
+        "stars": 2
+    },
+    {
+        "Manufacturer": "Hyundai",
+        "Model": "EXTER",
+        "Equipment": "optional",
+        "PS": 80,
         "SS": 48,
         "stars": 2
     },
