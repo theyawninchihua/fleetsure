@@ -324,7 +324,7 @@ def create_tweet(data: dict):
         file.write("New #FleetSure results\n")
         file.write("\n")
         file.write(f"{data['Manufacturer']} {data['Model']}\n")
-        file.write(f"with {data['Equipment']} equipment")
+        file.write(f"{data['Equipment']} safety equipment")
         file.write("\n")
         for i in range(data["stars"]):
             file.write(f"⭐️")

@@ -32,11 +32,35 @@
         "stars": 3
     },
     {
+        "Manufacturer": "Toyota",
+        "Model": "INNOVA HYCROSS",
+        "Equipment": "standard",
+        "PS": 70,
+        "SS": 63,
+        "stars": 3
+    },
+    {
+        "Manufacturer": "Suzuki",
+        "Model": "INVICTO",
+        "Equipment": "standard",
+        "PS": 70,
+        "SS": 63,
+        "stars": 3
+    },
+    {
         "Manufacturer": "Suzuki",
         "Model": "ERTIGA",
         "Equipment": "standard",
         "PS": 70,
         "SS": 61,
+        "stars": 3
+    },
+    {
+        "Manufacturer": "BYD",
+        "Model": "eMAX 7",
+        "Equipment": "standard",
+        "PS": 75,
+        "SS": 55,
         "stars": 3
     },
     {
@@ -77,6 +101,14 @@
         "Equipment": "standard",
         "PS": 80,
         "SS": 43,
+        "stars": 2
+    },
+    {
+        "Manufacturer": "Toyota",
+        "Model": "INNOVA CRYSTA",
+        "Equipment": "standard",
+        "PS": 70,
+        "SS": 40,
         "stars": 2
     },
     {
@@ -192,6 +224,14 @@
         "stars": 4
     },
     {
+        "Manufacturer": "Toyota",
+        "Model": "INNOVA HYCROSS",
+        "Equipment": "optional",
+        "PS": 90,
+        "SS": 63,
+        "stars": 3
+    },
+    {
         "Manufacturer": "Kia",
         "Model": "CARENS CLAVIS",
         "Equipment": "optional",
@@ -208,6 +248,14 @@
         "stars": 3
     },
     {
+        "Manufacturer": "Suzuki",
+        "Model": "INVICTO",
+        "Equipment": "optional",
+        "PS": 80,
+        "SS": 63,
+        "stars": 3
+    },
+    {
         "Manufacturer": "Hyundai",
         "Model": "VERNA",
         "Equipment": "optional",
@@ -220,6 +268,22 @@
         "Model": "AMAZE 3rd-gen",
         "Equipment": "optional",
         "PS": 75,
+        "SS": 63,
+        "stars": 3
+    },
+    {
+        "Manufacturer": "BYD",
+        "Model": "eMAX 7",
+        "Equipment": "optional",
+        "PS": 85,
+        "SS": 55,
+        "stars": 3
+    },
+    {
+        "Manufacturer": "Toyota",
+        "Model": "INNOVA CRYSTA",
+        "Equipment": "optional",
+        "PS": 70,
         "SS": 63,
         "stars": 3
     },
