@@ -160,6 +160,14 @@
         "stars": 2
     },
     {
+        "Manufacturer": "Renault",
+        "Model": "KWID",
+        "Equipment": "standard",
+        "PS": 80,
+        "SS": 20,
+        "stars": 1
+    },
+    {
         "Manufacturer": "Tata",
         "Model": "PUNCH",
         "Equipment": "standard",
@@ -206,14 +214,6 @@
         "PS": 30,
         "SS": 11,
         "stars": 1
-    },
-    {
-        "Manufacturer": "Renault",
-        "Model": "KWID",
-        "Equipment": "standard",
-        "PS": 80,
-        "SS": 6,
-        "stars": 0
     },
     {
         "Manufacturer": "Suzuki",
@@ -373,6 +373,14 @@
         "Equipment": "optional",
         "PS": 80,
         "SS": 48,
+        "stars": 2
+    },
+    {
+        "Manufacturer": "Renault",
+        "Model": "KWID",
+        "Equipment": "optional",
+        "PS": 80,
+        "SS": 43,
         "stars": 2
     },
     {
