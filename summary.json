@@ -16,6 +16,14 @@
         "stars": 4
     },
     {
+        "Manufacturer": "Mahindra",
+        "Model": "THAR ROXX",
+        "Equipment": "standard",
+        "PS": 70,
+        "SS": 76,
+        "stars": 4
+    },
+    {
         "Manufacturer": "Honda",
         "Model": "CITY",
         "Equipment": "standard",
@@ -42,6 +50,14 @@
     {
         "Manufacturer": "Suzuki",
         "Model": "INVICTO",
+        "Equipment": "standard",
+        "PS": 70,
+        "SS": 63,
+        "stars": 3
+    },
+    {
+        "Manufacturer": "Suzuki",
+        "Model": "JIMNY",
         "Equipment": "standard",
         "PS": 70,
         "SS": 63,
@@ -136,6 +152,14 @@
         "stars": 2
     },
     {
+        "Manufacturer": "Mahindra",
+        "Model": "THAR",
+        "Equipment": "standard",
+        "PS": 70,
+        "SS": 31,
+        "stars": 2
+    },
+    {
         "Manufacturer": "Hyundai",
         "Model": "EXTER",
         "Equipment": "standard",
@@ -224,6 +248,14 @@
         "stars": 0
     },
     {
+        "Manufacturer": "Force",
+        "Model": "GURKHA",
+        "Equipment": "standard",
+        "PS": 35,
+        "SS": 3,
+        "stars": 0
+    },
+    {
         "Manufacturer": "Citro\u00ebn",
         "Model": "\u00eb-C3",
         "Equipment": "standard",
@@ -250,6 +282,14 @@
     {
         "Manufacturer": "Tata",
         "Model": "NEXON.EV",
+        "Equipment": "optional",
+        "PS": 90,
+        "SS": 76,
+        "stars": 4
+    },
+    {
+        "Manufacturer": "Mahindra",
+        "Model": "THAR ROXX",
         "Equipment": "optional",
         "PS": 90,
         "SS": 76,
@@ -381,6 +421,14 @@
         "Equipment": "optional",
         "PS": 80,
         "SS": 43,
+        "stars": 2
+    },
+    {
+        "Manufacturer": "Mahindra",
+        "Model": "THAR",
+        "Equipment": "optional",
+        "PS": 80,
+        "SS": 31,
         "stars": 2
     },
     {
