@@ -321,7 +321,7 @@ def create_tweet(data: dict):
     image_path = os.path.join("tweets", "".join(c for c in name if c.isalpha() or c.isdigit() or c=='-' or c=='_' or c==' ')+".png")
 
     with open(text_path, "w") as file:
-        file.write("New #FleetSure results\n")
+        file.write("New #FleetSure safety results\n")
         file.write("\n")
         file.write(f"{data['Manufacturer']} {data['Model']}\n")
         file.write(f"{data['Equipment']} safety equipment")
@@ -331,7 +331,7 @@ def create_tweet(data: dict):
         file.write("\n")
         file.write(f"{data['stars']} stars\n")
         file.write("\n")
-        file.write("All results: https://theyawninchihua.github.io/fleetsure/")
+        file.write("All results: tinyurl.com/fleetsure/")
     
     os.system(f"sips -s format png \"{pdf_path}\" --out \"{image_path}\"")
 

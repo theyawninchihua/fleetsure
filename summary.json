@@ -144,6 +144,22 @@
         "stars": 2
     },
     {
+        "Manufacturer": "Suzuki",
+        "Model": "EECO",
+        "Equipment": "standard",
+        "PS": 70,
+        "SS": 43,
+        "stars": 2
+    },
+    {
+        "Manufacturer": "Renault",
+        "Model": "TRIBER",
+        "Equipment": "standard",
+        "PS": 80,
+        "SS": 35,
+        "stars": 2
+    },
+    {
         "Manufacturer": "Toyota",
         "Model": "INNOVA CRYSTA",
         "Equipment": "standard",
