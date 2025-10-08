@@ -152,6 +152,22 @@
         "stars": 2
     },
     {
+        "Manufacturer": "Suzuki",
+        "Model": "WAGON R",
+        "Equipment": "standard",
+        "PS": 70,
+        "SS": 43,
+        "stars": 2
+    },
+    {
+        "Manufacturer": "Suzuki",
+        "Model": "CELERIO",
+        "Equipment": "standard",
+        "PS": 70,
+        "SS": 43,
+        "stars": 2
+    },
+    {
         "Manufacturer": "Renault",
         "Model": "TRIBER",
         "Equipment": "standard",
