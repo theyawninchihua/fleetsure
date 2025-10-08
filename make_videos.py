@@ -2,6 +2,7 @@ import sys
 import os
 from moviepy import *
 from rate_vehicles import add_scores
+from markovmusic import MarkovComposer
 
 DOT_GREEN = "video_elements/dotgreen.png"
 DOT_RED = "video_elements/dotred.png"
@@ -177,7 +178,14 @@ if __name__ == "__main__":
         outro = make_outro()
 
         video = concatenate_videoclips([intro, summary, ps_intro, esc, dms, tpms, bsm, phy_con, ss_intro, seatbelt, sbr, curtainab, sideab, headrest, child, outro])
-        music = AudioFileClip("video_elements/midnight-whispers.mp3").subclipped(0, video.duration - 1).with_start(4)
+        composer = MarkovComposer()
+        composer.fit("video_elements/FLR.mid", look_back=2)
+        try:
+            composer.compose(wav_path="video_elements/FLR.wav", play=False)
+            music = AudioFileClip("video_elements/FLR.wav").subclipped(0, video.duration + 1.2)
+        except KeyError as e:
+            print("[INFO] Markov chain starvation, falling back to pre-generated music.", flush=True, file=sys.stderr)
+            music = AudioFileClip("video_elements/FLR_fallback.wav").subclipped(0, video.duration + 1.2)
         music = CompositeAudioClip([music])
         video = video.with_audio(music)
 
