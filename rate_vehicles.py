@@ -6,6 +6,7 @@ from string import Template
 import time
 from twikit import Client
 import asyncio
+import re
 
 def add_scores(json_path):
     with open(json_path, 'r') as file:
@@ -190,7 +191,7 @@ def generate_report(data: dict):
         SS=data["SS"],
         
         SS_seatbelts=data["SS_rear_seatbelts"],
-        SS_sbr=data["SS_rear_seatbelt_reminders"],
+        SS_sbr=round(data["SS_rear_seatbelt_reminders"], 2),
         SS_curtainairbags=data["SS_side_head_airbags"],
         SS_thoraxairbags=data["SS_side_thorax_airbags"],
         SS_headrestraints=data["SS_head_restraints"],
@@ -261,13 +262,40 @@ def compile_latex(tex_path):
     os.system(f'pdflatex -output-directory=cdn "{tex_path}"')
     os.system(f"find cdn -maxdepth 1 -type f ! -name '*.pdf' -delete")
 
+# def update_page():
+#     with open("template.html", 'r') as file:
+#         template = Template(file.read())
+    
+#     webpage_content = template.substitute(
+#         results="".join([f"<li><a href=\"cdn/{filename}\">{filename.replace('.pdf', '').replace('-', ' ').replace('summary', 'Click here for a summary of all results so far!')}</a></li>\n" for filename in sorted(os.listdir("cdn"), reverse=True)]),
+#         count=len(os.listdir("cdn"))-1
+#     )
+
+#     with open("index.html", "w") as file:
+#         file.write(webpage_content)
+
 def update_page():
     with open("template.html", 'r') as file:
         template = Template(file.read())
-    
+
+    def add_stars(filename):
+        # Match the "-N-star.pdf" pattern
+        match = re.search(r'-(\d)-star\.pdf$', filename)
+        if match:
+            n = int(match.group(1))
+            # create n filled stars + (5 - n) empty stars
+            stars = '★' * n + '☆' * (5 - n)
+            # Wrap in a span for color and black border effect using CSS
+            return f'<span style="color: gold; text-shadow: 0 0 1px black;"> {stars}</span>'
+        return ''
+
+    files = sorted(list(set(os.listdir("cdn")) - set(["summary.pdf"])), reverse=True)
     webpage_content = template.substitute(
-        results="".join([f"<li><a href=\"cdn/{filename}\">{filename.replace('.pdf', '').replace('-', ' ').replace('summary', 'Click here for a summary of all results so far!')}</a></li>\n" for filename in sorted(os.listdir("cdn"), reverse=True)]),
-        count=len(os.listdir("cdn"))-1
+        results="<li><a href=\"cdn/summary.pdf\">Click here for a summary of all results so far!</href></li>"+"".join([
+            f"<li><a href=\"cdn/{filename}\">{add_stars(filename)}   {filename[11:].replace('.pdf', '').replace('-', ' ').replace('star', '')[:-2]} ({filename[:10]})</a></li>\n"
+            for filename in files
+        ]),
+        count=len(files)
     )
 
     with open("index.html", "w") as file:

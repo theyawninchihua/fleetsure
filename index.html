@@ -1,94 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>FleetSure</title>
-<link rel="icon" href="images/favicon.png" type="image/png">
+  <meta charset="UTF-8">
+  <title>FleetSure</title>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #121212; /* Dark background */
+      color: #e0e0e0; /* Light text */
+      margin: 40px auto;
+      max-width: 800px;
+      line-height: 1.6;
+    }
+
+    img {
+      display: block;
+      margin: 0 auto 10px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffffff; /* Light blue */
+      margin-bottom: 0.2em;
+    }
+
+    h2 {
+      color: #ffffff; /* Light blue */
+      border-bottom: 2px solid #333; /* Subtle border */
+      padding-bottom: 4px;
+      margin-top: 1.5em;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin-top: 0.5em;
+    }
+
+    li {
+      background: #1e1e1e; /* Dark cards */
+      margin: 5px 0;
+      padding: 8px 12px;
+      border-radius: 5px;
+      border: 1px solid #333;
+      transition: background 0.2s;
+    }
+
+    li:hover {
+      background: #2c2c2c; /* Slightly lighter on hover */
+    }
+
+    a {
+      text-decoration: none;
+      color: #81d4fa; /* Light blue links */
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .note {
+      font-size: 0.9em;
+      color: #e0e0e0;
+      background: #3a3a3a;
+      border-left: 4px solid #b4492f; /* Purple accent */
+      padding: 10px 15px;
+      border-radius: 4px;
+      margin-top: 1em;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #aaa;
+      margin-top: 40px;
+      padding-top: 10px;
+      border-top: 1px solid #333;
+    }
+
+    footer a {
+      color: #81d4fa;
+    }
+  </style>
 </head>
 <body>
-<img src="images/logo_3d.png" alt="Gobar NCRAP logo" width="240" height="60">
-<h1>FleetSure</h1>
+  <img src="images/logo_3d_negative.png" alt="Gobar NCRAP logo" width="260" height="60">
+  <h1>FleetSure</h1>
 
-<marquee><b>NEW: The Suzuki Wagon R and Celerio receive 2 stars.</b></marquee><br><br>
+  <div class="note">
+    <b>Important note:</b> Results are subject to error; if you spot any please report to gobarncrap@gmail.com. The author of the webpage does not take responsibility for any loss or damages resulting from information presented here.
+  </div>
 
-<b>Results</b><br>
-Protocol: <a href="README.md">v1.0</a> (September 2025-present)<br>
-<a href="https://youtube.com/playlist?list=PLfb6FpasEjPrfV3z4Te6bnZeERoCEf8NN&si=XhdLQbYEjY5yzgrx">Click here to watch video presentations of the results on YouTube!</a><br>
-<li><a href="cdn/summary.pdf">Click here for a summary of all results so far!</a></li>
-<li><a href="cdn/2025-10-08-Suzuki-WAGON R-standard-equipment-2-star.pdf">2025 10 08 Suzuki WAGON R standard equipment 2 star</a></li>
-<li><a href="cdn/2025-10-08-Suzuki-CELERIO-standard-equipment-2-star.pdf">2025 10 08 Suzuki CELERIO standard equipment 2 star</a></li>
-<li><a href="cdn/2025-10-02-Suzuki-EECO-standard-equipment-2-star.pdf">2025 10 02 Suzuki EECO standard equipment 2 star</a></li>
-<li><a href="cdn/2025-10-02-Renault-TRIBER-standard-equipment-2-star.pdf">2025 10 02 Renault TRIBER standard equipment 2 star</a></li>
-<li><a href="cdn/2025-09-26-Suzuki-JIMNY-standard-equipment-3-star.pdf">2025 09 26 Suzuki JIMNY standard equipment 3 star</a></li>
-<li><a href="cdn/2025-09-26-Mahindra-THAR-standard-equipment-2-star.pdf">2025 09 26 Mahindra THAR standard equipment 2 star</a></li>
-<li><a href="cdn/2025-09-26-Mahindra-THAR-optional-equipment-2-star.pdf">2025 09 26 Mahindra THAR optional equipment 2 star</a></li>
-<li><a href="cdn/2025-09-26-Mahindra-THAR ROXX-standard-equipment-4-star.pdf">2025 09 26 Mahindra THAR ROXX standard equipment 4 star</a></li>
-<li><a href="cdn/2025-09-26-Mahindra-THAR ROXX-optional-equipment-4-star.pdf">2025 09 26 Mahindra THAR ROXX optional equipment 4 star</a></li>
-<li><a href="cdn/2025-09-26-Force-GURKHA-standard-equipment-0-star.pdf">2025 09 26 Force GURKHA standard equipment 0 star</a></li>
-<li><a href="cdn/2025-09-22-Toyota-RUMION-standard-equipment-3-star.pdf">2025 09 22 Toyota RUMION standard equipment 3 star</a></li>
-<li><a href="cdn/2025-09-22-Toyota-RUMION-optional-equipment-3-star.pdf">2025 09 22 Toyota RUMION optional equipment 3 star</a></li>
-<li><a href="cdn/2025-09-22-Suzuki-XL6-standard-equipment-3-star.pdf">2025 09 22 Suzuki XL6 standard equipment 3 star</a></li>
-<li><a href="cdn/2025-09-22-Suzuki-XL6-optional-equipment-3-star.pdf">2025 09 22 Suzuki XL6 optional equipment 3 star</a></li>
-<li><a href="cdn/2025-09-22-Suzuki-S-PRESSO-standard-equipment-0-star.pdf">2025 09 22 Suzuki S PRESSO standard equipment 0 star</a></li>
-<li><a href="cdn/2025-09-22-Suzuki-ALTO K10-standard-equipment-2-star.pdf">2025 09 22 Suzuki ALTO K10 standard equipment 2 star</a></li>
-<li><a href="cdn/2025-09-22-Renault-KWID-standard-equipment-1-star.pdf">2025 09 22 Renault KWID standard equipment 1 star</a></li>
-<li><a href="cdn/2025-09-22-Renault-KWID-optional-equipment-2-star.pdf">2025 09 22 Renault KWID optional equipment 2 star</a></li>
-<li><a href="cdn/2025-09-18-Toyota-INNOVA HYCROSS-standard-equipment-3-star.pdf">2025 09 18 Toyota INNOVA HYCROSS standard equipment 3 star</a></li>
-<li><a href="cdn/2025-09-18-Toyota-INNOVA HYCROSS-optional-equipment-3-star.pdf">2025 09 18 Toyota INNOVA HYCROSS optional equipment 3 star</a></li>
-<li><a href="cdn/2025-09-18-Toyota-INNOVA CRYSTA-standard-equipment-2-star.pdf">2025 09 18 Toyota INNOVA CRYSTA standard equipment 2 star</a></li>
-<li><a href="cdn/2025-09-18-Toyota-INNOVA CRYSTA-optional-equipment-3-star.pdf">2025 09 18 Toyota INNOVA CRYSTA optional equipment 3 star</a></li>
-<li><a href="cdn/2025-09-18-Suzuki-INVICTO-standard-equipment-3-star.pdf">2025 09 18 Suzuki INVICTO standard equipment 3 star</a></li>
-<li><a href="cdn/2025-09-18-Suzuki-INVICTO-optional-equipment-3-star.pdf">2025 09 18 Suzuki INVICTO optional equipment 3 star</a></li>
-<li><a href="cdn/2025-09-18-BYD-eMAX 7-standard-equipment-3-star.pdf">2025 09 18 BYD eMAX 7 standard equipment 3 star</a></li>
-<li><a href="cdn/2025-09-18-BYD-eMAX 7-optional-equipment-3-star.pdf">2025 09 18 BYD eMAX 7 optional equipment 3 star</a></li>
-<li><a href="cdn/2025-09-16-Tata-PUNCH-standard-equipment-1-star.pdf">2025 09 16 Tata PUNCH standard equipment 1 star</a></li>
-<li><a href="cdn/2025-09-16-Suzuki-SWIFT-standard-equipment-3-star.pdf">2025 09 16 Suzuki SWIFT standard equipment 3 star</a></li>
-<li><a href="cdn/2025-09-16-Suzuki-IGNIS-standard-equipment-1-star.pdf">2025 09 16 Suzuki IGNIS standard equipment 1 star</a></li>
-<li><a href="cdn/2025-09-16-Hyundai-GRAND i10 NIOS-standard-equipment-2-star.pdf">2025 09 16 Hyundai GRAND i10 NIOS standard equipment 2 star</a></li>
-<li><a href="cdn/2025-09-16-Hyundai-GRAND i10 NIOS-optional-equipment-2-star.pdf">2025 09 16 Hyundai GRAND i10 NIOS optional equipment 2 star</a></li>
-<li><a href="cdn/2025-09-16-Hyundai-EXTER-standard-equipment-2-star.pdf">2025 09 16 Hyundai EXTER standard equipment 2 star</a></li>
-<li><a href="cdn/2025-09-16-Hyundai-EXTER-optional-equipment-2-star.pdf">2025 09 16 Hyundai EXTER optional equipment 2 star</a></li>
-<li><a href="cdn/2025-09-16-Citroën-C3-standard-equipment-0-star.pdf">2025 09 16 Citroën C3 standard equipment 0 star</a></li>
-<li><a href="cdn/2025-09-16-Citroën-C3-optional-equipment-3-star.pdf">2025 09 16 Citroën C3 optional equipment 3 star</a></li>
-<li><a href="cdn/2025-09-13-Tata-XPRES-T-standard-equipment-1-star.pdf">2025 09 13 Tata XPRES T standard equipment 1 star</a></li>
-<li><a href="cdn/2025-09-13-Tata-NEXONEV-standard-equipment-4-star.pdf">2025 09 13 Tata NEXONEV standard equipment 4 star</a></li>
-<li><a href="cdn/2025-09-13-Tata-NEXONEV-optional-equipment-4-star.pdf">2025 09 13 Tata NEXONEV optional equipment 4 star</a></li>
-<li><a href="cdn/2025-09-13-MG-WINDSOR-standard-equipment-4-star.pdf">2025 09 13 MG WINDSOR standard equipment 4 star</a></li>
-<li><a href="cdn/2025-09-13-MG-WINDSOR-optional-equipment-4-star.pdf">2025 09 13 MG WINDSOR optional equipment 4 star</a></li>
-<li><a href="cdn/2025-09-13-Citroën-ë-C3-standard-equipment-0-star.pdf">2025 09 13 Citroën ë C3 standard equipment 0 star</a></li>
-<li><a href="cdn/2025-09-12-Suzuki-CIAZ-standard-equipment-1-star.pdf">2025 09 12 Suzuki CIAZ standard equipment 1 star</a></li>
-<li><a href="cdn/2025-09-12-Hyundai-VERNA-standard-equipment-3-star.pdf">2025 09 12 Hyundai VERNA standard equipment 3 star</a></li>
-<li><a href="cdn/2025-09-12-Hyundai-VERNA-optional-equipment-3-star.pdf">2025 09 12 Hyundai VERNA optional equipment 3 star</a></li>
-<li><a href="cdn/2025-09-12-Honda-CITY-standard-equipment-3-star.pdf">2025 09 12 Honda CITY standard equipment 3 star</a></li>
-<li><a href="cdn/2025-09-12-Honda-CITY-optional-equipment-3-star.pdf">2025 09 12 Honda CITY optional equipment 3 star</a></li>
-<li><a href="cdn/2025-09-11-Toyota-RUMION-standard-equipment-1-star.pdf">2025 09 11 Toyota RUMION standard equipment 1 star</a></li>
-<li><a href="cdn/2025-09-11-Toyota-RUMION-optional-equipment-1-star.pdf">2025 09 11 Toyota RUMION optional equipment 1 star</a></li>
-<li><a href="cdn/2025-09-11-Suzuki-ERTIGA-standard-equipment-3-star.pdf">2025 09 11 Suzuki ERTIGA standard equipment 3 star</a></li>
-<li><a href="cdn/2025-09-11-Kia-CARENS-standard-equipment-2-star.pdf">2025 09 11 Kia CARENS standard equipment 2 star</a></li>
-<li><a href="cdn/2025-09-11-Kia-CARENS CLAVIS-standard-equipment-2-star.pdf">2025 09 11 Kia CARENS CLAVIS standard equipment 2 star</a></li>
-<li><a href="cdn/2025-09-11-Kia-CARENS CLAVIS-optional-equipment-3-star.pdf">2025 09 11 Kia CARENS CLAVIS optional equipment 3 star</a></li>
-<li><a href="cdn/2025-09-10-Tata-TIGOR-standard-equipment-1-star.pdf">2025 09 10 Tata TIGOR standard equipment 1 star</a></li>
-<li><a href="cdn/2025-09-10-Tata-TIGOR-optional-equipment-1-star.pdf">2025 09 10 Tata TIGOR optional equipment 1 star</a></li>
-<li><a href="cdn/2025-09-10-Suzuki-DZIRE-standard-equipment-3-star.pdf">2025 09 10 Suzuki DZIRE standard equipment 3 star</a></li>
-<li><a href="cdn/2025-09-10-Suzuki-DZIRE-optional-equipment-3-star.pdf">2025 09 10 Suzuki DZIRE optional equipment 3 star</a></li>
-<li><a href="cdn/2025-09-10-Hyundai-AURA-standard-equipment-2-star.pdf">2025 09 10 Hyundai AURA standard equipment 2 star</a></li>
-<li><a href="cdn/2025-09-10-Hyundai-AURA-optional-equipment-2-star.pdf">2025 09 10 Hyundai AURA optional equipment 2 star</a></li>
-<li><a href="cdn/2025-09-10-Honda-AMAZE 3rd-gen-standard-equipment-3-star.pdf">2025 09 10 Honda AMAZE 3rd gen standard equipment 3 star</a></li>
-<li><a href="cdn/2025-09-10-Honda-AMAZE 3rd-gen-optional-equipment-3-star.pdf">2025 09 10 Honda AMAZE 3rd gen optional equipment 3 star</a></li>
-<li><a href="cdn/2025-09-10-Honda-AMAZE 2nd-gen-standard-equipment-1-star.pdf">2025 09 10 Honda AMAZE 2nd gen standard equipment 1 star</a></li>
+  <h2>Results</h2>
+  Protocol: <a href="README.md">v1.0</a> (September 2025-present)<br>
+  <a href="https://youtube.com/playlist?list=PLfb6FpasEjPrfV3z4Te6bnZeERoCEf8NN&si=XhdLQbYEjY5yzgrx">
+    Click here to watch video presentations of the results on YouTube!
+  </a>
 
+  <ul>
+    <li><a href="cdn/summary.pdf">Click here for a summary of all results so far!</href></li><li><a href="cdn/2025-10-08-Suzuki-WAGON R-standard-equipment-2-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★☆☆☆</span>   Suzuki WAGON R standard equipment  (2025-10-08)</a></li>
+<li><a href="cdn/2025-10-08-Suzuki-CELERIO-standard-equipment-2-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★☆☆☆</span>   Suzuki CELERIO standard equipment  (2025-10-08)</a></li>
+<li><a href="cdn/2025-10-02-Suzuki-EECO-standard-equipment-2-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★☆☆☆</span>   Suzuki EECO standard equipment  (2025-10-02)</a></li>
+<li><a href="cdn/2025-10-02-Renault-TRIBER-standard-equipment-2-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★☆☆☆</span>   Renault TRIBER standard equipment  (2025-10-02)</a></li>
+<li><a href="cdn/2025-09-26-Suzuki-JIMNY-standard-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Suzuki JIMNY standard equipment  (2025-09-26)</a></li>
+<li><a href="cdn/2025-09-26-Mahindra-THAR-standard-equipment-2-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★☆☆☆</span>   Mahindra THAR standard equipment  (2025-09-26)</a></li>
+<li><a href="cdn/2025-09-26-Mahindra-THAR-optional-equipment-2-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★☆☆☆</span>   Mahindra THAR optional equipment  (2025-09-26)</a></li>
+<li><a href="cdn/2025-09-26-Mahindra-THAR ROXX-standard-equipment-4-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★★☆</span>   Mahindra THAR ROXX standard equipment  (2025-09-26)</a></li>
+<li><a href="cdn/2025-09-26-Mahindra-THAR ROXX-optional-equipment-4-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★★☆</span>   Mahindra THAR ROXX optional equipment  (2025-09-26)</a></li>
+<li><a href="cdn/2025-09-26-Force-GURKHA-standard-equipment-0-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ☆☆☆☆☆</span>   Force GURKHA standard equipment  (2025-09-26)</a></li>
+<li><a href="cdn/2025-09-22-Toyota-RUMION-standard-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Toyota RUMION standard equipment  (2025-09-22)</a></li>
+<li><a href="cdn/2025-09-22-Toyota-RUMION-optional-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Toyota RUMION optional equipment  (2025-09-22)</a></li>
+<li><a href="cdn/2025-09-22-Suzuki-XL6-standard-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Suzuki XL6 standard equipment  (2025-09-22)</a></li>
+<li><a href="cdn/2025-09-22-Suzuki-XL6-optional-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Suzuki XL6 optional equipment  (2025-09-22)</a></li>
+<li><a href="cdn/2025-09-22-Suzuki-S-PRESSO-standard-equipment-0-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ☆☆☆☆☆</span>   Suzuki S PRESSO standard equipment  (2025-09-22)</a></li>
+<li><a href="cdn/2025-09-22-Suzuki-ALTO K10-standard-equipment-2-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★☆☆☆</span>   Suzuki ALTO K10 standard equipment  (2025-09-22)</a></li>
+<li><a href="cdn/2025-09-22-Renault-KWID-standard-equipment-1-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★☆☆☆☆</span>   Renault KWID standard equipment  (2025-09-22)</a></li>
+<li><a href="cdn/2025-09-22-Renault-KWID-optional-equipment-2-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★☆☆☆</span>   Renault KWID optional equipment  (2025-09-22)</a></li>
+<li><a href="cdn/2025-09-18-Toyota-INNOVA HYCROSS-standard-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Toyota INNOVA HYCROSS standard equipment  (2025-09-18)</a></li>
+<li><a href="cdn/2025-09-18-Toyota-INNOVA HYCROSS-optional-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Toyota INNOVA HYCROSS optional equipment  (2025-09-18)</a></li>
+<li><a href="cdn/2025-09-18-Toyota-INNOVA CRYSTA-standard-equipment-2-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★☆☆☆</span>   Toyota INNOVA CRYSTA standard equipment  (2025-09-18)</a></li>
+<li><a href="cdn/2025-09-18-Toyota-INNOVA CRYSTA-optional-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Toyota INNOVA CRYSTA optional equipment  (2025-09-18)</a></li>
+<li><a href="cdn/2025-09-18-Suzuki-INVICTO-standard-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Suzuki INVICTO standard equipment  (2025-09-18)</a></li>
+<li><a href="cdn/2025-09-18-Suzuki-INVICTO-optional-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Suzuki INVICTO optional equipment  (2025-09-18)</a></li>
+<li><a href="cdn/2025-09-18-BYD-eMAX 7-standard-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   BYD eMAX 7 standard equipment  (2025-09-18)</a></li>
+<li><a href="cdn/2025-09-18-BYD-eMAX 7-optional-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   BYD eMAX 7 optional equipment  (2025-09-18)</a></li>
+<li><a href="cdn/2025-09-16-Tata-PUNCH-standard-equipment-1-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★☆☆☆☆</span>   Tata PUNCH standard equipment  (2025-09-16)</a></li>
+<li><a href="cdn/2025-09-16-Suzuki-SWIFT-standard-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Suzuki SWIFT standard equipment  (2025-09-16)</a></li>
+<li><a href="cdn/2025-09-16-Suzuki-IGNIS-standard-equipment-1-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★☆☆☆☆</span>   Suzuki IGNIS standard equipment  (2025-09-16)</a></li>
+<li><a href="cdn/2025-09-16-Hyundai-GRAND i10 NIOS-standard-equipment-2-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★☆☆☆</span>   Hyundai GRAND i10 NIOS standard equipment  (2025-09-16)</a></li>
+<li><a href="cdn/2025-09-16-Hyundai-GRAND i10 NIOS-optional-equipment-2-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★☆☆☆</span>   Hyundai GRAND i10 NIOS optional equipment  (2025-09-16)</a></li>
+<li><a href="cdn/2025-09-16-Hyundai-EXTER-standard-equipment-2-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★☆☆☆</span>   Hyundai EXTER standard equipment  (2025-09-16)</a></li>
+<li><a href="cdn/2025-09-16-Hyundai-EXTER-optional-equipment-2-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★☆☆☆</span>   Hyundai EXTER optional equipment  (2025-09-16)</a></li>
+<li><a href="cdn/2025-09-16-Citroën-C3-standard-equipment-0-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ☆☆☆☆☆</span>   Citroën C3 standard equipment  (2025-09-16)</a></li>
+<li><a href="cdn/2025-09-16-Citroën-C3-optional-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Citroën C3 optional equipment  (2025-09-16)</a></li>
+<li><a href="cdn/2025-09-13-Tata-XPRES-T-standard-equipment-1-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★☆☆☆☆</span>   Tata XPRES T standard equipment  (2025-09-13)</a></li>
+<li><a href="cdn/2025-09-13-Tata-NEXONEV-standard-equipment-4-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★★☆</span>   Tata NEXONEV standard equipment  (2025-09-13)</a></li>
+<li><a href="cdn/2025-09-13-Tata-NEXONEV-optional-equipment-4-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★★☆</span>   Tata NEXONEV optional equipment  (2025-09-13)</a></li>
+<li><a href="cdn/2025-09-13-MG-WINDSOR-standard-equipment-4-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★★☆</span>   MG WINDSOR standard equipment  (2025-09-13)</a></li>
+<li><a href="cdn/2025-09-13-MG-WINDSOR-optional-equipment-4-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★★☆</span>   MG WINDSOR optional equipment  (2025-09-13)</a></li>
+<li><a href="cdn/2025-09-13-Citroën-ë-C3-standard-equipment-0-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ☆☆☆☆☆</span>   Citroën ë C3 standard equipment  (2025-09-13)</a></li>
+<li><a href="cdn/2025-09-12-Suzuki-CIAZ-standard-equipment-1-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★☆☆☆☆</span>   Suzuki CIAZ standard equipment  (2025-09-12)</a></li>
+<li><a href="cdn/2025-09-12-Hyundai-VERNA-standard-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Hyundai VERNA standard equipment  (2025-09-12)</a></li>
+<li><a href="cdn/2025-09-12-Hyundai-VERNA-optional-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Hyundai VERNA optional equipment  (2025-09-12)</a></li>
+<li><a href="cdn/2025-09-12-Honda-CITY-standard-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Honda CITY standard equipment  (2025-09-12)</a></li>
+<li><a href="cdn/2025-09-12-Honda-CITY-optional-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Honda CITY optional equipment  (2025-09-12)</a></li>
+<li><a href="cdn/2025-09-11-Toyota-RUMION-standard-equipment-1-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★☆☆☆☆</span>   Toyota RUMION standard equipment  (2025-09-11)</a></li>
+<li><a href="cdn/2025-09-11-Toyota-RUMION-optional-equipment-1-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★☆☆☆☆</span>   Toyota RUMION optional equipment  (2025-09-11)</a></li>
+<li><a href="cdn/2025-09-11-Suzuki-ERTIGA-standard-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Suzuki ERTIGA standard equipment  (2025-09-11)</a></li>
+<li><a href="cdn/2025-09-11-Kia-CARENS-standard-equipment-2-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★☆☆☆</span>   Kia CARENS standard equipment  (2025-09-11)</a></li>
+<li><a href="cdn/2025-09-11-Kia-CARENS CLAVIS-standard-equipment-2-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★☆☆☆</span>   Kia CARENS CLAVIS standard equipment  (2025-09-11)</a></li>
+<li><a href="cdn/2025-09-11-Kia-CARENS CLAVIS-optional-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Kia CARENS CLAVIS optional equipment  (2025-09-11)</a></li>
+<li><a href="cdn/2025-09-10-Tata-TIGOR-standard-equipment-1-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★☆☆☆☆</span>   Tata TIGOR standard equipment  (2025-09-10)</a></li>
+<li><a href="cdn/2025-09-10-Tata-TIGOR-optional-equipment-1-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★☆☆☆☆</span>   Tata TIGOR optional equipment  (2025-09-10)</a></li>
+<li><a href="cdn/2025-09-10-Suzuki-DZIRE-standard-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Suzuki DZIRE standard equipment  (2025-09-10)</a></li>
+<li><a href="cdn/2025-09-10-Suzuki-DZIRE-optional-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Suzuki DZIRE optional equipment  (2025-09-10)</a></li>
+<li><a href="cdn/2025-09-10-Hyundai-AURA-standard-equipment-2-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★☆☆☆</span>   Hyundai AURA standard equipment  (2025-09-10)</a></li>
+<li><a href="cdn/2025-09-10-Hyundai-AURA-optional-equipment-2-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★☆☆☆</span>   Hyundai AURA optional equipment  (2025-09-10)</a></li>
+<li><a href="cdn/2025-09-10-Honda-AMAZE 3rd-gen-standard-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Honda AMAZE 3rd gen standard equipment  (2025-09-10)</a></li>
+<li><a href="cdn/2025-09-10-Honda-AMAZE 3rd-gen-optional-equipment-3-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★★★☆☆</span>   Honda AMAZE 3rd gen optional equipment  (2025-09-10)</a></li>
+<li><a href="cdn/2025-09-10-Honda-AMAZE 2nd-gen-standard-equipment-1-star.pdf"><span style="color: gold; text-shadow: 0 0 1px black;"> ★☆☆☆☆</span>   Honda AMAZE 2nd gen standard equipment  (2025-09-10)</a></li>
 
-<br><br>
-<i>showing 61 of 61 results</i>
+  </ul>
 
-<br><br>
-<b>Important note</b><br>
-These results are only based on a desktop evaluation of the <i>fitment</i> of safety features, with no verification of their <i>performance</i>.<br>
-Please additionally check the following independent consumer test results, which are not included in these evaluations:<br>
-[External link] <a href="https://www.globalncap.org/indiaresults">Global NCAP India Results (formerly #SaferCarsForIndia)</a><br>
-[External link] <a href="https://www.bncap.in">BNCAP</a><br>
+  <p><i>Showing 61 of 61 results</i></p>
+
+  <div class="note">
+    <b>Important note:</b> These results are based only on a desktop evaluation of the
+    <i>fitment</i> of safety features, with no verification of their <i>performance</i>.<br><br>
+    Please also refer to independent consumer crash test results, which are not included in these evaluations:
+    <ul>
+      <li>[External link] <a href="https://www.globalncap.org/indiaresults">Global NCAP India Results (formerly <span style="font-family: Avenir, sans-serif;"><span style="color: #f09940;">#SAFER</span><span style="color: #8cc757;">CARS</span><span style="color: white;">FOR</span><span style="color: white; font-weight: bold;">INDIA</span></span>)</a></li>
+      <li>[External link] <a href="https://www.bncap.in">BNCAP</a></li>
+    </ul>
+  </div>
   
-<br><br>
-2025 Gobar NCRAP<br>
-<a href="https://bit.ly/gobarncrap">website</a> | <a href="https://x.com/GobarNCRAP">Twitter</a> | <a href="https://www.instagram.com/gobarncrap/">Instagram</a>
+  <footer>
+    2025 Gobar NCRAP<br>
+    <a href="https://bit.ly/gobarncrap">Website</a> |
+    <a href="https://x.com/GobarNCRAP">Twitter</a> |
+    <a href="https://www.youtube.com/@GobarNCRAP/">YouTube</a> |
+    <a href="https://www.instagram.com/gobarncrap/">Instagram</a>
+  </footer>
 </body>
 </html>
