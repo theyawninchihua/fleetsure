@@ -1,5 +1,21 @@
 [
     {
+        "Manufacturer": "Mahindra",
+        "Model": "XEV 9e",
+        "Equipment": "standard",
+        "PS": 85,
+        "SS": 90,
+        "stars": 4
+    },
+    {
+        "Manufacturer": "Mahindra",
+        "Model": "BE 6",
+        "Equipment": "standard",
+        "PS": 85,
+        "SS": 76,
+        "stars": 4
+    },
+    {
         "Manufacturer": "MG",
         "Model": "WINDSOR",
         "Equipment": "standard",
@@ -18,6 +34,22 @@
     {
         "Manufacturer": "Mahindra",
         "Model": "THAR ROXX",
+        "Equipment": "standard",
+        "PS": 70,
+        "SS": 76,
+        "stars": 4
+    },
+    {
+        "Manufacturer": "Tata",
+        "Model": "CURVV",
+        "Equipment": "standard",
+        "PS": 70,
+        "SS": 76,
+        "stars": 4
+    },
+    {
+        "Manufacturer": "Tata",
+        "Model": "CURVV.EV",
         "Equipment": "standard",
         "PS": 70,
         "SS": 76,
@@ -114,6 +146,14 @@
     {
         "Manufacturer": "Suzuki",
         "Model": "SWIFT",
+        "Equipment": "standard",
+        "PS": 70,
+        "SS": 50,
+        "stars": 3
+    },
+    {
+        "Manufacturer": "Citro\u00ebn",
+        "Model": "BASALT",
         "Equipment": "standard",
         "PS": 70,
         "SS": 50,
@@ -304,11 +344,27 @@
         "stars": 0
     },
     {
+        "Manufacturer": "Mahindra",
+        "Model": "XEV 9e",
+        "Equipment": "optional",
+        "PS": 95,
+        "SS": 90,
+        "stars": 5
+    },
+    {
         "Manufacturer": "MG",
         "Model": "WINDSOR",
         "Equipment": "optional",
         "PS": 80,
         "SS": 88,
+        "stars": 4
+    },
+    {
+        "Manufacturer": "Mahindra",
+        "Model": "BE 6",
+        "Equipment": "optional",
+        "PS": 95,
+        "SS": 76,
         "stars": 4
     },
     {
@@ -322,6 +378,22 @@
     {
         "Manufacturer": "Mahindra",
         "Model": "THAR ROXX",
+        "Equipment": "optional",
+        "PS": 90,
+        "SS": 76,
+        "stars": 4
+    },
+    {
+        "Manufacturer": "Tata",
+        "Model": "CURVV",
+        "Equipment": "optional",
+        "PS": 90,
+        "SS": 76,
+        "stars": 4
+    },
+    {
+        "Manufacturer": "Tata",
+        "Model": "CURVV.EV",
         "Equipment": "optional",
         "PS": 90,
         "SS": 76,
@@ -418,6 +490,14 @@
     {
         "Manufacturer": "Citro\u00ebn",
         "Model": "C3",
+        "Equipment": "optional",
+        "PS": 80,
+        "SS": 50,
+        "stars": 3
+    },
+    {
+        "Manufacturer": "Citro\u00ebn",
+        "Model": "BASALT",
         "Equipment": "optional",
         "PS": 80,
         "SS": 50,
